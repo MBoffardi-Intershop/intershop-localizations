@@ -3,6 +3,11 @@
 This project is used to manage localizations of Intershop Commerce Suite that are not part of the General Availability releases.
 It is provided "as is" and as a form of collaboration. Everyone is free to contribute.
 
+## Suported Applications and versions
+* ICM 7.10.29.1 
+** SLDSytem (Backoffce)
+*** Italian (work in progress)
+
 ## Content
 ### originals
 The "originals" folder contains the original localization files created for Intershop in english. The folder structure is
