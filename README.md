@@ -5,8 +5,8 @@ It is provided "as is" and as a form of collaboration. Everyone is free to contr
 
 ## Suported Applications and versions
 * ICM 7.10.29.1 
-** SLDSytem (Backoffce)
-*** Italian (work in progress)
+ * SLDSytem (Backoffce)
+  * Italian (work in progress)
 
 ## Content
 ### originals
