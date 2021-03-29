@@ -18,12 +18,16 @@ do
     do
         printf "."
         let files=files+1
-        cat $locfile >>$out.tmp
+        # cat the file by concatenating multi-row translations
+        # first sed removes the DOS trailing endline, if existing
+        # the awk "if"  detects a line ending with \ removes it and output it without the line separator
+        cat $locfile | sed -e 's/\r$//g' | awk '{if (sub(/\\$/,"")) printf "%s", $0; else print $0}' >>$out.tmp
         cl=$(cat $locfile | wc -l)
         let lines=lines+cl
     done
-    sort $out.tmp > $out
+    # Sorts the localization keys and removes empty lines
+    sort $out.tmp | grep '^[[:blank:]]*[^[:blank:]#;]' > $out
     rm $out.tmp
-    echo "\nDone.\nProcessed $lines translation keys in $files files."
+    echo "\nDone.\nProcessed $lines translation keys in $files files, removing comments and empty lines."
     ls -l $out
 done
