@@ -39,3 +39,7 @@ The localization files can be used in custom project by putting them into the lo
 This project is an initiative of an employee of Intershop, but not officially supported and mantained by Intershop Communications.
 For more information contact [m.boffardi@intershop.com](mailto:m.boffardi@intershop.com).
 
+
+## Contributions
+You are free to update the translated files and forward a push request with the changes!
+If you does not want to fix the translation but you see something strange, please use the "Issue" link in this project and signal the translations that are not correct!
